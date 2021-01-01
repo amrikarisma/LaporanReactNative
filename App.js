@@ -1,13 +1,33 @@
-import { Text, View } from "react-native";
-
-import React from 'react';
-
-
-const App = () => {
+import React, { Component } from 'react';
+import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base';
+export default class AnatomyExample extends Component {
+  render() {
     return (
-        <View>
-            <Text>Ini Aplikasi React Native Pertama Saya</Text>
-        </View>
+      <Container>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='navigation' />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Judul</Title>
+          </Body>
+          <Right />
+        </Header>
+        <Content>
+          <Text>
+            This is Content Section
+          </Text>
+        </Content>
+        <Footer>
+          <FooterTab>
+            <Button full>
+              <Text>Footer</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
+  }
 }
-export default App;
